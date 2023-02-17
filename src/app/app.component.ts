@@ -7,7 +7,7 @@ import { Route, Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Bienvenidos a la tienda';
+  title = 'Tienda de incienso';
   
 
 }

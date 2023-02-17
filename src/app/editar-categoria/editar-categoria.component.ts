@@ -19,20 +19,16 @@ export class EditarCategoriaComponent implements OnInit {
    
 }
  Editar(categoria:Categoria){
-  let id=localStorage.getItem("id_categoria");
+  //let id=document.getElementById("id_categoria");
   this.conexion.actualizarCategoria(categoria)
     .subscribe(data=>{
       alert("Actualizando...");
-
+      this.categoria=data;
       this.categoria.id_categoria=data.id_categoria;
       this.categoria.cat_nombre=data.cat_nombre;
       this.categoria.cat_descripcion=data.cat_descripcion;
       
       this.router.navigate(["listar"]);
-      
-      
-      
-
     })
  }
   

@@ -22,7 +22,7 @@ export class ListarComponent implements OnInit {
     
   }
 
-  Editar(categoria:Categoria){
+  Editar(categoria:Categoria):void{
     localStorage.setItem("id_categoria", categoria.id_categoria.toString());
     //console.log(categoria.id_categoria);
     //console.log(categoria.cat_nombre);
@@ -30,8 +30,15 @@ export class ListarComponent implements OnInit {
     console.log(categoria);
     console.log(categoria.id_categoria.toString());
     this.router.navigate(["editar"]);
-    return categoria;
+    //return categoria;
     
+  }
+  Delete(categoria:Categoria){
+    this.conexion.deleteCategoria(categoria)
+    .subscribe(data=>{
+      this.categoria=this.categoria.filter(c=>c!==categoria);
+      alert("Usuario eliminado...");
+    })
   }
   
   

@@ -9,6 +9,7 @@ import { ListarComponent } from './listar/listar.component';
 import { PostCategoriaComponent } from './post-categoria/post-categoria.component';
 import { FormsModule } from '@angular/forms';
 import { EditarCategoriaComponent } from './editar-categoria/editar-categoria.component';
+import { ProductoComponent } from './producto/producto.component';
 
 
 
@@ -19,6 +20,7 @@ import { EditarCategoriaComponent } from './editar-categoria/editar-categoria.co
     ListarComponent,
     PostCategoriaComponent,
     EditarCategoriaComponent,
+    ProductoComponent,
     
 
     

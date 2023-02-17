@@ -26,13 +26,16 @@ export class ConexionService {
     return this.http.post<Categoria>(this.API_URL,categoria);
   }
 
-  getCategoriaId(id:number){
-    this.http.get<Categoria>(this.API_URL+"/"+id)
+  getCategoriaId(id_categoria:number){
+    this.http.get<Categoria>(this.API_URL+"/"+id_categoria)
 
   }
 
   actualizarCategoria(categoria:Categoria){
     return this.http.put<Categoria>(this.API_URL+"/"+categoria.id_categoria, categoria);
+  }
+  deleteCategoria(categoria:Categoria){
+    return this.http.delete<Categoria>(this.API_URL+"/"+categoria.id_categoria);
   }
  
 }
