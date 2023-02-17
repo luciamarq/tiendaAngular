@@ -1,0 +1,30 @@
+<!--Listado de CATEGORIAS EN FORMA DE TABLAS: SE PODRÁ EDITAR O ELIMINAR-->>
+<div class="card">
+    <div class="card-header">
+        <h3>Categorias:</h3>
+
+    </div>
+   <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let categoria of categoria" class="text-center">
+                    <td>{{categoria.id_categoria}}</td>
+                    <td>{{categoria.cat_nombre}}</td>
+                    <td>{{categoria.cat_descripcion}}</td>
+                    <td>
+                        <button (click)="Editar(categoria)" class="btn btn-warning" routerLink="/editar">Editar</button>
+                        <button class="btn btn-danger">Borrar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+   </div>
+</div> 
+
