@@ -1,0 +1,44 @@
+<div class="card">
+    <div class="card-header">
+    </div>
+   <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Fecha Activacion</th>
+                    <th>Unidad/venta</th>
+                    <th>Pais</th>
+                    <th>Categoria</th>
+                    <th>Uso recomendado</th>
+                    <th>Stock Reservado</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let producto of producto" class="text-center">
+                    <td>{{producto.id_producto}}</td>
+                    <td>{{producto.pro_descripcion}}</td>
+                    <td>{{producto.pro_precio}}</td>
+                    <td>{{producto.pro_stock}}</td>
+                    <td>{{producto.pro_fecActi}}</td>
+                    <td>{{producto.pro_uniVenta}}</td>
+                    <td>{{producto.id_pais}}</td>
+                    <td>{{producto.id_categoria}}</td>
+                    <td>{{producto.pro_usoRecomendado}}</td>
+                    <td>{{producto.pro_stkReservado}}</td>
+                    <td>{{producto.pro_stat}}</td>
+                    
+
+                    <td>
+                        <button class="btn btn-warning">Editar</button>
+                        <button class="btn btn-danger">Borrar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+   </div>
+</div> 

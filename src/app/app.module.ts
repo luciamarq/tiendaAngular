@@ -10,6 +10,8 @@ import { PostCategoriaComponent } from './post-categoria/post-categoria.componen
 import { FormsModule } from '@angular/forms';
 import { EditarCategoriaComponent } from './editar-categoria/editar-categoria.component';
 import { ProductoComponent } from './producto/producto.component';
+import { ListarProductosComponent } from './listar-productos/listar-productos.component';
+import { PostProductosComponent } from './post-productos/post-productos.component';
 
 
 
@@ -21,6 +23,8 @@ import { ProductoComponent } from './producto/producto.component';
     PostCategoriaComponent,
     EditarCategoriaComponent,
     ProductoComponent,
+    ListarProductosComponent,
+    PostProductosComponent,
     
 
     

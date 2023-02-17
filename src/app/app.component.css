@@ -9,11 +9,31 @@ font-size: 55px;
 a{
     color: black;
 }
-.nav-link{
+.nav-item{
     background-color: antiquewhite;
     color: black;
     font-size: 18px;
     font-family: sans-serif;
-  font-style: oblique;
+    font-style: oblique;
+    width: 40%;
+    
+  
 
+}
+
+.categoria{
+    width: 4%;
+    margin-right: 10px;
+}
+.producto{
+    width: 4%;
+    margin-right: 10px;
+}
+.usuario{
+    width: 4%;
+    margin-right: 10px;
+}
+.cesta{
+    width: 4%;
+    margin-right: 10px;
 }

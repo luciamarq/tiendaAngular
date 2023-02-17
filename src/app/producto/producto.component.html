@@ -1,10 +1,13 @@
-<h2>PRODUCTOS</h2>
+<h2>Productos</h2>
     <div id="container1">
         <a 
         routerLink="/productos">
           
        </a>
-       <button  class="btn-btn-info">Ver catalogo de productos:</button>
-        <button  class="btn-btn-info" style="margin-left: 10px;">Añadir nuevo producto</button> 
+       <button (click)=" ListarProductos()" routerLink="/ListarProductos" class="btn-btn-info">Catálogo de productos:</button>
+        <button  (click)="nuevoProducto()"  routerLink="/nuevoProducto" class="btn-btn-info" style="margin-left: 10px;">Añadir nuevo producto</button> 
 
     </div>
+<router-outlet>
+
+</router-outlet>

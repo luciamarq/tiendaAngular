@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs';
 import {share} from 'rxjs/operators';
 import { Categoria } from '../modelos/Categoria';
+import { Producto } from '../modelos/Producto';
 
 
 
@@ -30,12 +31,14 @@ export class ConexionService {
     this.http.get<Categoria>(this.API_URL+"/"+id_categoria)
 
   }
-
   actualizarCategoria(categoria:Categoria){
     return this.http.put<Categoria>(this.API_URL+"/"+categoria.id_categoria, categoria);
   }
   deleteCategoria(categoria:Categoria){
     return this.http.delete<Categoria>(this.API_URL+"/"+categoria.id_categoria);
+  }
+  getProductos(){
+    return this.http.get<Producto[]>(this.API_PRODUCTOS);
   }
  
 }
